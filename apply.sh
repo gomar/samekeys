@@ -64,6 +64,9 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Inse
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
 
+# Unlock: ⌘⇧L (matches Figma)
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
+
 # View
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Slide' '@$2'
@@ -109,6 +112,9 @@ defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Inse
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
 
+# Unlock: ⌘⇧L (matches Figma)
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
+
 # View
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
 
@@ -129,6 +135,9 @@ defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
+
+# Unlock: ⌘⇧L (matches Figma)
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
 # View
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
