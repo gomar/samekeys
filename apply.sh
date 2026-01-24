@@ -1,6 +1,26 @@
 #!/bin/bash
 # Keysmith - Apply unified shortcuts across design apps
 # Run once on new Mac. Restart apps after running.
+#
+# Usage:
+#   ./apply.sh          Apply all shortcuts
+#   ./apply.sh --clean  Remove all custom shortcuts first, then apply
+
+APPS=(
+    "com.figma.Desktop"
+    "com.apple.iWork.Keynote"
+    "com.microsoft.PowerPoint"
+    "com.apple.iWork.Numbers"
+    "com.apple.iWork.Pages"
+)
+
+if [[ "$1" == "--clean" ]]; then
+    echo "Cleaning existing shortcuts..."
+    for app in "${APPS[@]}"; do
+        defaults delete "$app" NSUserKeyEquivalents 2>/dev/null || true
+    done
+    echo "Cleaned. Applying fresh shortcuts..."
+fi
 
 # Key encoding:
 # ^ = Control, @ = Command, ~ = Option, $ = Shift
