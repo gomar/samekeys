@@ -23,13 +23,14 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Centre" '^@\U21a9'
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Middle" '^@`'
 
-# --- PowerPoint ---
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Left" '^@\UF702'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Right" '^@\UF703'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Top" '^@\UF700'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Bottom" '^@\UF701'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Centre" '^@\U21a9'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Middle" '^@`'
+# --- PowerPoint (sandboxed) ---
+PPT_PREFS=~/Library/Containers/com.microsoft.PowerPoint/Data/Library/Preferences/com.microsoft.PowerPoint
+defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Left" '^@\UF702'
+defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Right" '^@\UF703'
+defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Top" '^@\UF700'
+defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Bottom" '^@\UF701'
+defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Centre" '^@\U21a9'
+defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Middle" '^@`'
 
 # --- Numbers ---
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Left" '^@\UF702'
