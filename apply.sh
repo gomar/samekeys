@@ -34,13 +34,13 @@ defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to Middle" '@^`'
 
 # --- Numbers ---
-# Uses leaf menu name only, @^ order (like PowerPoint)
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Left" '@^\U2190'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Right" '@^\U2192'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Top" '@^\U2191'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Bottom" '@^\U2193'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Centre" '@^\U21a9'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Middle" '@^`'
+# Uses \033 (escape) as path separator for conflicting names
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Align Objects\033Left' '@^\U2190'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Align Objects\033Right' '@^\U2192'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Align Objects\033Top' '@^\U2191'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Align Objects\033Bottom' '@^\U2193'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Align Objects\033Centre' '@^\U21a9'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Align Objects\033Middle' '@^`'
 
 # --- Pages ---
 # Uses leaf menu name only, @^ order (like Numbers/PowerPoint)
