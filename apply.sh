@@ -23,8 +23,8 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Centre" '^@\U21a9'
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Middle" '^@`'
 
-# --- PowerPoint (sandboxed) ---
-PPT_PREFS=~/Library/Containers/com.microsoft.PowerPoint/Data/Library/Preferences/com.microsoft.PowerPoint
+# --- PowerPoint (sandboxed, note lowercase 'p' in Powerpoint) ---
+PPT_PREFS=~/Library/Containers/com.microsoft.PowerPoint/Data/Library/Preferences/com.microsoft.Powerpoint
 defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Left" '^@\UF702'
 defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Right" '^@\UF703'
 defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Top" '^@\UF700'
