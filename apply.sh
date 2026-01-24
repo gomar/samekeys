@@ -23,14 +23,14 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Centre" '^@\U21a9'
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Middle" '^@`'
 
-# --- PowerPoint (sandboxed, note lowercase 'p' in Powerpoint) ---
-PPT_PREFS=~/Library/Containers/com.microsoft.PowerPoint/Data/Library/Preferences/com.microsoft.Powerpoint
-defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Left" '^@\UF702'
-defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Right" '^@\UF703'
-defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Top" '^@\UF700'
-defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Bottom" '^@\UF701'
-defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Centre" '^@\U21a9'
-defaults write "$PPT_PREFS" NSUserKeyEquivalents -dict-add "Arrange->Align or Distribute->Align to Middle" '^@`'
+# --- PowerPoint ---
+# Uses standard domain (not sandboxed container), leaf menu name only, @^ order
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to Left" '@^\U2190'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to Right" '@^\U2192'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to Top" '@^\U2191'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to Bottom" '@^\U2193'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to Centre" '@^\U21a9'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add "Align to Middle" '@^`'
 
 # --- Numbers ---
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add "Arrange->Align Objects->Left" '^@\UF702'
