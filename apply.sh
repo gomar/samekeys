@@ -23,10 +23,8 @@ defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\03
 # Lock: uses Figma's native ⌘⇧L
 
 # View
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Selection' '@^1'
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Fit' '@^2'
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to 100%' '@^3'
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Rulers' '^g'
+defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Selection' '@$1'
+defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Fit' '@$2'
 
 # =============================================================================
 # KEYNOTE
@@ -51,10 +49,8 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arra
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
 # View
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@^1'
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Slide' '@^2'
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Actual Size' '@^3'
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Guides\033Show Guides' '^g'
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Slide' '@$2'
 
 # =============================================================================
 # POWERPOINT
@@ -75,8 +71,7 @@ defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Ins
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Line' '@^l'
 
 # View
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit to Window' '@^2'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033View\033Grid and Guides\033Guides' '^g'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit to Window' '@$2'
 
 # =============================================================================
 # NUMBERS
@@ -101,9 +96,7 @@ defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arra
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
 # View
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@^1'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Actual Size' '@^3'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Guides\033Show Guides' '^g'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
 
 # =============================================================================
 # PAGES
@@ -128,9 +121,7 @@ defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrang
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
 # View
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@^1'
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Page' '@^2'
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Actual Size' '@^3'
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Guides\033Show Guides' '^g'
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Page' '@$2'
 
 echo "Done. Restart apps for shortcuts to take effect."
