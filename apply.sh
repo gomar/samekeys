@@ -40,7 +40,7 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arra
 
 # Creation
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Text Box' '@^t'
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rectangle' '@^r'
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
 
@@ -66,7 +66,7 @@ defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Arr
 
 # Creation
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Text Box' '@^t'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rectangle' '@^r'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Line' '@^l'
 
@@ -87,7 +87,7 @@ defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arra
 
 # Creation
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Text Box' '@^t'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rectangle' '@^r'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
 
@@ -112,7 +112,7 @@ defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrang
 
 # Creation
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Text Box' '@^t'
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rectangle' '@^r'
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
 
