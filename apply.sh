@@ -43,8 +43,8 @@ defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\03
 # Lock: uses Figma's native ⌘⇧L
 
 # Distribute
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Horizontal Spacing' '@$`'
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Vertical Spacing' '@$\U21a9'
+defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Horizontal Spacing' '@^$`'
+defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Vertical Spacing' '@^$\U21a9'
 
 # View
 defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Selection' '@$1'
@@ -72,8 +72,8 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Inse
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
 # Distribute
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Horizontally' '@$`'
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@$\U21a9'
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Horizontally' '@^$`'
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@^$\U21a9'
 
 # View
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
@@ -100,8 +100,8 @@ defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Ins
 # Copy/Paste Style: native ⌥⌘C / ⇧⌘V
 
 # Distribute
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Arrange\033Align or Distribute\033Distribute Horizontally' '@$`'
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Arrange\033Align or Distribute\033Distribute Vertically' '@$\U21a9'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Arrange\033Align or Distribute\033Distribute Horizontally' '@^$`'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Arrange\033Align or Distribute\033Distribute Vertically' '@^$\U21a9'
 
 # View
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit to Window' '@$2'
@@ -128,8 +128,8 @@ defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Inse
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
 # Distribute
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Horizontally' '@$`'
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@$\U21a9'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Horizontally' '@^$`'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@^$\U21a9'
 
 # View
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
@@ -156,8 +156,8 @@ defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Insert
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
 # Distribute
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Horizontally' '@$`'
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@$\U21a9'
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Horizontally' '@^$`'
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@^$\U21a9'
 
 # View
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'

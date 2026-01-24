@@ -30,8 +30,8 @@ To start fresh (removes old custom shortcuts first):
 | ⌃⌘↓ | Align bottom |
 | ⌃⌘↩ | Align horizontal centers |
 | ⌃⌘` | Align vertical centers |
-| ⌘⇧` | Distribute horizontally |
-| ⌘⇧↩ | Distribute vertically |
+| ⌃⌘⇧` | Distribute horizontally |
+| ⌃⌘⇧↩ | Distribute vertically |
 
 ### Creation
 
