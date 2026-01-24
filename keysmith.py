@@ -14,34 +14,41 @@ TARGET_APPS = {
 APPLESCRIPT = '''
 tell application "System Events"
     set appProcess to first process whose bundle identifier is "{bundle_id}"
-    set output to ""
+    set outputList to {}
     repeat with menuBarItem in menu bar items of menu bar 1 of appProcess
         set menuName to name of menuBarItem
         if menuName is not missing value then
             try
-                set output to output & my traverseMenu(menu 1 of menuBarItem, menuName)
+                my traverseMenu(menu 1 of menuBarItem, menuName, outputList)
             end try
         end if
+    end repeat
+    set output to ""
+    repeat with item_ in outputList
+        set output to output & item_ & linefeed
     end repeat
     return output
 end tell
 
-on traverseMenu(theMenu, parentPath)
-    set result to ""
+on traverseMenu(theMenu, parentPath, outputList)
     tell application "System Events"
         repeat with menuItem in menu items of theMenu
             set itemName to name of menuItem
             if itemName is not missing value and itemName is not "" then
                 set fullPath to parentPath & " > " & itemName
+                set hasSubmenu to false
                 try
-                    set result to result & my traverseMenu(menu 1 of menuItem, fullPath)
-                on error
-                    set result to result & fullPath & linefeed
+                    set subMenu to menu 1 of menuItem
+                    set hasSubmenu to true
                 end try
+                if hasSubmenu then
+                    my traverseMenu(subMenu, fullPath, outputList)
+                else
+                    set end of outputList to fullPath
+                end if
             end if
         end repeat
     end tell
-    return result
 end traverseMenu
 '''
 
