@@ -47,8 +47,8 @@ defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\03
 defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Vertical Spacing' '@^$\U21a9'
 
 # View
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Selection' '@$1'
-defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Fit' '@$2'
+defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Selection' '@1'
+defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033View\033Zoom to Fit' '@2'
 
 # =============================================================================
 # KEYNOTE
@@ -76,8 +76,8 @@ defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arra
 defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@^$\U21a9'
 
 # View
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
-defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Slide' '@$2'
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@1'
+defaults write com.apple.iWork.Keynote NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Slide' '@2'
 
 # =============================================================================
 # POWERPOINT
@@ -104,7 +104,7 @@ defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Arr
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Arrange\033Align or Distribute\033Distribute Vertically' '@^$\U21a9'
 
 # View
-defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit to Window' '@$2'
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit to Window' '@2'
 
 # =============================================================================
 # NUMBERS
@@ -132,7 +132,7 @@ defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arra
 defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@^$\U21a9'
 
 # View
-defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
+defaults write com.apple.iWork.Numbers NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@1'
 
 # =============================================================================
 # PAGES
@@ -160,7 +160,7 @@ defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrang
 defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Distribute Objects\033Vertically' '@^$\U21a9'
 
 # View
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@$1'
-defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Page' '@$2'
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@1'
+defaults write com.apple.iWork.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Page' '@2'
 
 echo "Done. Restart apps for shortcuts to take effect."

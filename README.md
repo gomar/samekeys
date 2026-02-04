@@ -46,8 +46,8 @@ To start fresh (removes old custom shortcuts first):
 
 | Shortcut | Action | Notes |
 |----------|--------|-------|
-| ⌘⇧1 | Zoom to selection | |
-| ⌘⇧2 | Zoom to fit | Not available in Numbers |
+| ⌘1 | Zoom to selection | |
+| ⌘2 | Zoom to fit | Not available in Numbers |
 
 ### Other
 
@@ -55,7 +55,7 @@ To start fresh (removes old custom shortcuts first):
 |----------|--------|-------|
 | ⌘⇧L | Unlock | Matches Figma's lock toggle |
 | ⌥⌘C | Copy style | Native in all apps |
-| ⌥⌘V | Paste style | Native in all apps |
+| ⌥⌘V | Paste style | iWork/Figma (PowerPoint uses ⇧⌘V) |
 
 ## Supported apps
 
