@@ -1,8 +1,8 @@
 # Keysmith
 
-Same shortcuts across Figma, Keynote, PowerPoint, Numbers, and Pages.
+Stop re-learning shortcuts every time you switch between Figma and Keynote.
 
-Run once on a new Mac. Muscle memory stays intact.
+One script. Same shortcuts across Figma, Keynote, PowerPoint, Numbers, and Pages. Run once on a new Mac — muscle memory stays intact.
 
 ## Install
 
@@ -12,11 +12,13 @@ Run once on a new Mac. Muscle memory stays intact.
 
 Restart your apps. Done.
 
-To start fresh (removes old custom shortcuts first):
+To start fresh:
 
 ```bash
 ./apply.sh --clean
 ```
+
+> `--clean` removes **all** custom keyboard shortcuts for the supported apps, not just the ones set by Keysmith. Only use it if you haven't customised shortcuts yourself, or if you're okay resetting them.
 
 ## Shortcuts
 
