@@ -1,4 +1,4 @@
-# Keysmith
+# samekeys
 
 Learn your shortcuts once. Use them everywhere.
 
@@ -12,7 +12,7 @@ One script gives you the same keyboard shortcuts across Figma, Keynote, PowerPoi
 
 Restart your apps. That's it.
 
-Want a clean slate? This removes all custom shortcuts for the supported apps, then re-applies Keysmith's.
+Want a clean slate? This removes all custom shortcuts for the supported apps, then re-applies samekeys's.
 
 ```bash
 ./apply.sh --clean
@@ -63,6 +63,6 @@ Figma, Keynote, PowerPoint, Numbers and Pages.
 
 ## How it works
 
-macOS lets you override any menu shortcut with `defaults write`. Keysmith writes the same set of shortcuts to each app's preferences.
+macOS lets you override any menu shortcut with `defaults write`. samekeys writes the same set of shortcuts to each app's preferences.
 
 Figma is the mental model. Where Figma already has a shortcut — like `T` for text — we keep it. Where it doesn't, we use `⌃⌘` as the modifier.

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Keysmith - Apply unified shortcuts across design apps
+# samekeys - Apply unified shortcuts across design apps
 # Run once on new Mac. Restart apps after running.
 #
 # Usage:
