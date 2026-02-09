@@ -1,24 +1,22 @@
 # Keysmith
 
-Stop re-learning shortcuts every time you switch between Figma and Keynote.
+Learn your shortcuts once. Use them everywhere.
 
-One script. Same shortcuts across Figma, Keynote, PowerPoint, Numbers, and Pages. Run once on a new Mac — muscle memory stays intact.
+One script gives you the same keyboard shortcuts across Figma, Keynote, PowerPoint, Numbers and Pages. Run it on a new Mac — you're done.
 
-## Install
+## Get started
 
 ```bash
 ./apply.sh
 ```
 
-Restart your apps. Done.
+Restart your apps. That's it.
 
-To start fresh:
+Want a clean slate? This removes all custom shortcuts for the supported apps, then re-applies Keysmith's.
 
 ```bash
 ./apply.sh --clean
 ```
-
-> `--clean` removes **all** custom keyboard shortcuts for the supported apps, not just the ones set by Keysmith. Only use it if you haven't customised shortcuts yourself, or if you're okay resetting them.
 
 ## Shortcuts
 
@@ -55,20 +53,16 @@ To start fresh:
 
 | Shortcut | Action | Notes |
 |----------|--------|-------|
-| ⌘⇧L | Unlock | Matches Figma's lock toggle |
+| ⌘⇧L | Unlock | Matches Figma |
 | ⌥⌘C | Copy style | Native in all apps |
-| ⌥⌘V | Paste style | iWork/Figma (PowerPoint uses ⇧⌘V) |
+| ⌥⌘V | Paste style | PowerPoint uses ⇧⌘V |
 
 ## Supported apps
 
-- Figma
-- Keynote
-- PowerPoint
-- Numbers
-- Pages
+Figma, Keynote, PowerPoint, Numbers and Pages.
 
 ## How it works
 
-macOS lets you override menu shortcuts via `defaults write`. This script writes the same shortcuts to each app's preferences.
+macOS lets you override any menu shortcut with `defaults write`. Keysmith writes the same set of shortcuts to each app's preferences.
 
-Figma's shortcuts are the mental model. Where Figma has native shortcuts (like `T` for text), we use those. Where it doesn't, we add `⌃⌘` as the modifier.
+Figma is the mental model. Where Figma already has a shortcut — like `T` for text — we keep it. Where it doesn't, we use `⌃⌘` as the modifier.
