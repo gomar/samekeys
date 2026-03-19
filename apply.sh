@@ -30,7 +30,7 @@ fi
 # =============================================================================
 # FIGMA
 # =============================================================================
-# Note: Creation shortcuts (T, R, O, L) are built-in tools, not menu items
+# Note: Creation shortcuts (T, R, O, L) and Comment (C) are built-in tools, not menu items
 
 # Alignment
 defaults write com.figma.Desktop NSUserKeyEquivalents -dict-add $'\033Arrange\033Align Left' '@^\U2190'
@@ -68,6 +68,9 @@ defaults write com.apple.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033
 defaults write com.apple.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
 
+# Comment
+defaults write com.apple.Keynote NSUserKeyEquivalents -dict-add $'\033Insert\033Comment' '@^c'
+
 # Unlock: ⌘⇧L (matches Figma)
 defaults write com.apple.Keynote NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
 
@@ -97,6 +100,9 @@ defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Ins
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Line' '@^l'
 
+# Comment
+defaults write com.microsoft.PowerPoint NSUserKeyEquivalents -dict-add $'\033Insert\033Comment' '@^c'
+
 # Copy/Paste Style: native ⌥⌘C / ⇧⌘V
 
 # Distribute
@@ -123,6 +129,9 @@ defaults write com.apple.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033
 defaults write com.apple.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
 defaults write com.apple.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
+
+# Comment
+defaults write com.apple.Numbers NSUserKeyEquivalents -dict-add $'\033Insert\033Comment' '@^c'
 
 # Unlock: ⌘⇧L (matches Figma)
 defaults write com.apple.Numbers NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
@@ -151,6 +160,9 @@ defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Te
 defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
 defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
 defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Line\033Line' '@^l'
+
+# Comment
+defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033Insert\033Comment' '@^c'
 
 # Unlock: ⌘⇧L (matches Figma)
 defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033Unlock' '@$l'
