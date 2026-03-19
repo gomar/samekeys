@@ -53,6 +53,7 @@ Want a clean slate? This removes all custom shortcuts for the supported apps, th
 
 | Shortcut | Action | Notes |
 |----------|--------|-------|
+| ⌃⌘C | Comment | Figma uses native `C` |
 | ⌘⇧L | Unlock | Matches Figma |
 | ⌥⌘C | Copy style | Native in all apps |
 | ⌥⌘V | Paste style | PowerPoint uses ⇧⌘V |
