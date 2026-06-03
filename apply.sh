@@ -12,6 +12,8 @@ APPS=(
     "com.microsoft.PowerPoint"
     "com.apple.Numbers"
     "com.apple.Pages"
+    "com.microsoft.Word"
+    "com.microsoft.Excel"
 )
 
 if [[ "$1" == "--clean" ]]; then
@@ -174,5 +176,33 @@ defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033Arrange\033D
 # View
 defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Zoom to Selection' '@1'
 defaults write com.apple.Pages NSUserKeyEquivalents -dict-add $'\033View\033Zoom\033Fit Page' '@2'
+
+# =============================================================================
+# WORD
+# =============================================================================
+# Note: alignment/distribute/unlock are ribbon-only in Word — not bindable via menu bar.
+
+# Creation
+defaults write com.microsoft.Word NSUserKeyEquivalents -dict-add $'\033Insert\033Text Box\033Text Box' '@^t'
+defaults write com.microsoft.Word NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
+defaults write com.microsoft.Word NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
+defaults write com.microsoft.Word NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Line' '@^l'
+
+# Comment
+defaults write com.microsoft.Word NSUserKeyEquivalents -dict-add $'\033Insert\033Comment' '@^c'
+
+# =============================================================================
+# EXCEL
+# =============================================================================
+# Note: alignment/distribute/unlock are ribbon-only in Excel — not bindable via menu bar.
+
+# Creation
+defaults write com.microsoft.Excel NSUserKeyEquivalents -dict-add $'\033Insert\033Text Box' '@^t'
+defaults write com.microsoft.Excel NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Rounded Rectangle' '@^r'
+defaults write com.microsoft.Excel NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Oval' '@^o'
+defaults write com.microsoft.Excel NSUserKeyEquivalents -dict-add $'\033Insert\033Shape\033Line' '@^l'
+
+# Comment (Excel uses "New Comment", not "Comment")
+defaults write com.microsoft.Excel NSUserKeyEquivalents -dict-add $'\033Insert\033New Comment' '@^c'
 
 echo "Done. Restart apps for shortcuts to take effect."

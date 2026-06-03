@@ -2,7 +2,7 @@
 
 Learn your shortcuts once. Use them everywhere.
 
-One script gives you the same keyboard shortcuts across Figma, Keynote, PowerPoint, Numbers and Pages. Run it on a new Mac — you're done.
+One script gives you the same keyboard shortcuts across Figma, Keynote, PowerPoint, Word, Numbers, Pages and Excel. Run it on a new Mac — you're done.
 
 ## Get started
 
@@ -42,6 +42,8 @@ Want a clean slate? This removes all custom shortcuts for the supported apps, th
 | ⌃⌘O | Oval | Figma uses native `O` |
 | ⌃⌘L | Line | Figma uses native `L` |
 
+> **Word & Excel**: creation shortcuts work. Alignment, distribute, and unlock are ribbon-only in these apps and cannot be bound to keyboard shortcuts.
+
 ### View
 
 | Shortcut | Action | Notes |
@@ -60,7 +62,7 @@ Want a clean slate? This removes all custom shortcuts for the supported apps, th
 
 ## Supported apps
 
-Figma, Keynote, PowerPoint, Numbers and Pages.
+Figma, Keynote, PowerPoint, Word, Numbers, Pages and Excel.
 
 ## How it works
 
